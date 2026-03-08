@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="sajt.css">
+        <title>otkup i prodaja telefona</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="naslov-poz">
+            <h1 class="naslov">OTKUP I PRODAJA TELEFONA</h1>
+        </div>
+        <div class="info">
+            <button class="int">Info o nama</button>
+            <button class="int">Kontaktirajte nas</button>
+            
+            <input type="text" placeholder="search" class="src">
+            <img src="slike/search-icon-png-9993.png" class="mini">
+        </div>
+        <div>
+            <h1 class="iphone">Odaberi svoj uredjaj</h1>
+        </div>
+    <div class="device-wrapper">
+<a href="android.html" class="device-link">
+  <div class="android-box device-box">
+    <h1 class="naziv">SAMSUNG UREDJAJI</h1>
+    <img src="slike/Galaxy-S25-Ultra-Titanium-Gray-Smartphone-Samsung-Flagship.png" class="samsung">
+   </div>
+</a>
+<a href="iphone.html" class="device-link">
+<div class="apple-box device-box">
+    <h1 class="naziv">APPLE UREDJAJI</h1>
+    <img src="slike/iPhone-13-Free-PNG-Image.png" class="ippp3">
+</div>
+</a>
+<div class="xiamoi-box device-box">
+    <h1 class="naziv">XIAOMI UREDJAJI</h1> 
+    <img src="slike/Xiaomi-17-Pro-All-Colors-PNG.png" class="kina">
+</div>
+</div>
+<script>
+const deviceBoxes = document.querySelectorAll('.device-box');
+
+window.addEventListener('scroll', () => {
+    const screenHeight = window.innerHeight;
+
+    deviceBoxes.forEach(box => {
+        const position = box.getBoundingClientRect().top;
+
+        if (position < screenHeight - 100) {
+            box.classList.add('show');
+        }
+    });
+});
+</script>
+<footer class="footer-poz">
+    <h2 class="footer-text">© 2026 Otkup i prodaja telefona</h2>
+</footer>
+
+</body>
+
